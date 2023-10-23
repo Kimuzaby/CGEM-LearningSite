@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Classroom</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
+    body {
+      font-family: "Maven Pro", sans-serif;
+      padding-top: 70px;
+    }
+
+    .centered-image {
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      max-width: 50%;
+      height: auto;
+      border-radius: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #5b5b5b;
+    }
+
+    #content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .course, .topic {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+    h1 {
+      color: #212121;
+      font-size: 2.8em;
+      margin: 24px 0;
+    }
+
+    h2 {
+      color: #353535;
+      font-size: 2.4em;
+      font-weight: bold;
+    }
+
+    h3 {
+      color: #484848;
+    }
+
+    h3,
+    b, strong {
+      font-weight: bold;
+    }
+
+    #topics {
+      padding: 0 20px;
+    }
+
+    a {
+      color: #0066CC;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .custom-btn {
+      background: #eee;
+      color: #5b5b5b;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 13px 29px;
+      font-size: 14px;
+      line-height: normal;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      margin-bottom: 7px;
+    }
+    .custom-btn:hover {
+      color: #003cffe5;
+    }
+    .custom-btn.custom-btn-bg {
+      background: #474559;
+      color: #ffffff;
+    }
+    .custom-btn.custom-btn-bg:hover {
+      background: #003cffe5;
+      color: #ffffff !important;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #4285F4;
+      color: #FFF;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357AE8;
+    }
+
+
+
+  
+    .topic-toggle {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+
+    .topic-toggle.active {
+      max-height: 1500px; /* adjust as needed */
+      opacity: 1;
+    }
+
+
+    /* PDF 1 */
+    #pdf-frame1 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame1.active1 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+    
+
+     /* PDF 2 */
+     #pdf-frame2 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame2.active2 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+
+    /* PDF 3 */
+    #pdf-frame3 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame3.active3 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+     /* PDF 4 */
+     #pdf-frame4 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame4.active4 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <img class="centered-image" src="media/banner.png" alt="">
+
+  <div id="content">
+    <div class="course">
+      <h2>Introducción</h2>
+      <button onclick="toggleTopics(1)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+      <div class="topic-toggle" id="topics1">
+        <div class="topic">
+          <h3>¡Con Gráficos es Mejor!</h3>
+          <p>¡Bienvenidos al Curso de Excel 2019 Básico ¡Con Gráficos es Mejor!, una emocionante iniciativa de aprendizaje gratuito ofrecida por el proyecto comunitario Acceso a Oportunidades para Superarse (AOS). En AOS, estamos comprometidos con el empoderamiento de las comunidades a través de la adquisición de habilidades valiosas, y Excel es una herramienta esencial en el mundo laboral y académico. Este curso ha sido diseñado especialmente para aquellos que desean adentrarse en el mundo de las hojas de cálculo y descubrir cómo Excel puede facilitar la gestión de datos y la toma de decisiones.   <br><br>
+
+            A lo largo de este curso, exploraremos los conceptos básicos de Excel 2019, desde la creación de hojas de cálculo hasta la realización de cálculos simples, la organización de datos y la creación de gráficos informativos. Nuestro objetivo es brindarles las habilidades esenciales necesarias para utilizar Excel de manera efectiva en la vida cotidiana y en sus futuras carreras. <br> <br>
+            
+            En AOS, creemos en la importancia de compartir conocimientos y oportunidades, y este curso es una manifestación de ese compromiso. Esperamos que aprovechen al máximo esta experiencia educativa y que les ayude a abrir nuevas puertas en su camino hacia el éxito. <br> <br>
+            
+            ¡Estamos emocionados de embarcarnos en este viaje de aprendizaje juntos! Comencemos a explorar el mundo de Excel 2019 y descubrir las infinitas posibilidades que esta herramienta ofrece. ¡Vamos a empezar a aprender y superarnos juntos!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <h2>Tema 1: Introducción a Excel 2019</h2>
+      <button onclick="toggleTopics(2)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+      <div class="topic-toggle" id="topics2">
+        <div class="topic">
+          <h3>Tema 1 en Formato de PDF</h3>
+          <button id="pdf-toggle1" onclick="togglePDF1()">Mostrar PDF</button>
+          <iframe id="pdf-frame1" src="classes/Clase1.pdf" width="700" height="600"></iframe>
+        </div>
+        <div class="topic">
+          <h3>Tema 1 en Formato de Video</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IDMJtIVTTxU?si=b4kU7g6KYaSOiFUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="topic">
+          <h3>Práctica 1</h3>
+          <button id="pdf-toggle2" onclick="togglePDF2()">Mostrar PDF</button>
+          <iframe id="pdf-frame2" src="practice/Clase1P.pdf" width="700" height="600"></iframe>
+        </div>
+        <div class="topic">
+          <h3>Examen 1</h3>
+          <a href="https://forms.gle/75Gvpd8M3CKTHVMN9" target="_blank">Abrir examen 1</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course">
+      <h2>Tema 2: Funciones de Excel</h2>
+      <button onclick="toggleTopics(3)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+      <div class="topic-toggle" id="topics3">
+        <div class="topic">
+          <h3>Tema 2 en Formato de PDF</h3>
+          <button id="pdf-toggle3" onclick="togglePDF3()">Mostrar PDF</button>
+          <iframe id="pdf-frame3" src="classes/Clase1.pdf" width="700" height="600"></iframe>
+        </div>
+        <div class="topic">
+          <h3>Tema 2 en Formato de Video</h3>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IDMJtIVTTxU?si=b4kU7g6KYaSOiFUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="topic">
+          <h3>Práctica 2</h3>
+          <button id="pdf-toggle4" onclick="togglePDF4()">Mostrar PDF</button>
+          <iframe id="pdf-frame4" src="practice/Clase1P.pdf" width="700" height="600"></iframe>
+        </div>
+        <div class="topic">
+          <h3>Examen 1</h3>
+          <a href="https://forms.gle/75Gvpd8M3CKTHVMN9" target="_blank">Abrir examen 1</a>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    function toggleTopics(courseNumber) {
+      var topics = document.getElementById("topics" + courseNumber);
+      topics.classList.toggle("active");
+    }
+
+    function togglePDF1() {
+      const pdfFrame = document.getElementById('pdf-frame1');
+      const toggleBtn = document.getElementById('pdf-toggle1');
+      
+      if (pdfFrame.classList.contains('active1')) {
+        pdfFrame.classList.remove('active1');
+        toggleBtn.textContent = 'Mostrar PDF';
+      } else {
+        pdfFrame.classList.add('active1');
+        toggleBtn.textContent = 'Ocultar PDF';
+      }
+    }
+
+    function togglePDF2() {
+      const pdfFrame = document.getElementById('pdf-frame2');
+      const toggleBtn = document.getElementById('pdf-toggle2');
+      
+      if (pdfFrame.classList.contains('active2')) {
+        pdfFrame.classList.remove('active2');
+        toggleBtn.textContent = 'Mostrar PDF';
+      } else {
+        pdfFrame.classList.add('active2');
+        toggleBtn.textContent = 'Ocultar PDF';
+      }
+    }
+
+    function togglePDF3() {
+      const pdfFrame = document.getElementById('pdf-frame3');
+      const toggleBtn = document.getElementById('pdf-toggle3');
+      
+      if (pdfFrame.classList.contains('active3')) {
+        pdfFrame.classList.remove('active3');
+        toggleBtn.textContent = 'Mostrar PDF';
+      } else {
+        pdfFrame.classList.add('active3');
+        toggleBtn.textContent = 'Ocultar PDF';
+      }
+    }
+
+    function togglePDF4() {
+      const pdfFrame = document.getElementById('pdf-frame4');
+      const toggleBtn = document.getElementById('pdf-toggle4');
+      
+      if (pdfFrame.classList.contains('active4')) {
+        pdfFrame.classList.remove('active4');
+        toggleBtn.textContent = 'Mostrar PDF';
+      } else {
+        pdfFrame.classList.add('active4');
+        toggleBtn.textContent = 'Ocultar PDF';
+      }
+    }
+  </script>
+</body>
+</html>
