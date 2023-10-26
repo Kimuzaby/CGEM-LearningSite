@@ -1,319 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>AOS Learning Site</title>
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/project/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    body {
-      font-family: "Maven Pro", sans-serif;
-      padding-top: 70px;
-    }
+    <title>AOS - Learning Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    .centered-image {
-      display: block;
-      margin: 0 auto;
-      margin-top: 25px;
-      max-width: 50%;
-      height: auto;
-      border-radius: 25px;
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.5;
-      color: #5b5b5b;
-    }
-
-    #content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .course, .topic {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: bold;
-      letter-spacing: -1px;
-    }
-    h1 {
-      color: #212121;
-      font-size: 2.8em;
-      margin: 24px 0;
-    }
-
-    h2 {
-      color: #353535;
-      font-size: 2.4em;
-      font-weight: bold;
-    }
-
-    h3 {
-      color: #484848;
-    }
-
-    h3,
-    b, strong {
-      font-weight: bold;
-    }
-
-    #topics {
-      padding: 0 20px;
-    }
-
-    a {
-      color: #0066CC;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .custom-btn {
-      background: #eee;
-      color: #5b5b5b;
-      font-weight: bold;
-      border-radius: 50px;
-      padding: 13px 29px;
-      font-size: 14px;
-      line-height: normal;
-      overflow: hidden;
-      transition: all 0.4s ease;
-      margin-bottom: 7px;
-    }
-    .custom-btn:hover {
-      color: #003cffe5;
-    }
-    .custom-btn.custom-btn-bg {
-      background: #474559;
-      color: #ffffff;
-    }
-    .custom-btn.custom-btn-bg:hover {
-      background: #003cffe5;
-      color: #ffffff !important;
-    }
-
-    button {
-      padding: 5px 10px;
-      background-color: #4285F4;
-      color: #FFF;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #357AE8;
-    }
-
-
-
-  
-    .topic-toggle {
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      transition: max-height 0.9s ease, opacity 0.9s ease;
-    }
-
-    .topic-toggle.active {
-      max-height: 1500px; /* adjust as needed */
-      opacity: 1;
-    }
-
-
-    /* PDF 1 */
-    #pdf-frame1 {
-      max-height: 0;
-      opacity: 0;
-      display: block;
-      overflow: hidden;
-      transition: max-height 0.9s ease, opacity 0.9s ease;
-    }
-    #pdf-frame1.active1 {
-      max-height: 900px; /* adjust as needed */
-      opacity: 1;
-    }
     
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
+  </head>
+  <body>
 
-     /* PDF 2 */
-     #pdf-frame2 {
-      max-height: 0;
-      opacity: 0;
-      display: block;
-      overflow: hidden;
-      transition: max-height 0.9s ease, opacity 0.9s ease;
-    }
-    #pdf-frame2.active2 {
-      max-height: 900px; /* adjust as needed */
-      opacity: 1;
-    }
+    <!--Menu-->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.aos-project.org/"><i class='uil uil-user'></i> AOS</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="https://www.aos-project.org/" class="nav-link"><span data-hover="Página Principal">Página Principal</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://aos-learningsite.netlify.app/" class="nav-link"><span data-hover="AOS Learning Site Menú">AOS Learning Site Menú</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#curso" class="nav-link"><span data-hover="Curso">Curso</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link"><span data-hover="Contacto">Contacto</span></a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Modo Oscuro
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img class="centered-image" src="images/project/banner.png" alt="" id="curso">
+
+    <div id="content">
+      <div class="course">
+        <h2 >Introducción</h2>
+        <button onclick="toggleTopics(1)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+        <div class="topic-toggle" id="topics1">
+          <div class="topic">
+            <h3>¡Con Gráficos es Mejor!</h3>
+            <p>¡Bienvenidos al Curso de Excel 2019 Básico ¡Con Gráficos es Mejor!, una emocionante iniciativa de aprendizaje gratuito ofrecida por el proyecto comunitario Acceso a Oportunidades para Superarse (AOS). En AOS, estamos comprometidos con el empoderamiento de las comunidades a través de la adquisición de habilidades valiosas, y Excel es una herramienta esencial en el mundo laboral y académico. Este curso ha sido diseñado especialmente para aquellos que desean adentrarse en el mundo de las hojas de cálculo y descubrir cómo Excel puede facilitar la gestión de datos y la toma de decisiones.   <br><br>
+  
+              A lo largo de este curso, exploraremos los conceptos básicos de Excel 2019, desde la creación de hojas de cálculo hasta la realización de cálculos simples, la organización de datos y la creación de gráficos informativos. Nuestro objetivo es brindarles las habilidades esenciales necesarias para utilizar Excel de manera efectiva en la vida cotidiana y en sus futuras carreras. <br> <br>
+              
+              En AOS, creemos en la importancia de compartir conocimientos y oportunidades, y este curso es una manifestación de ese compromiso. Esperamos que aprovechen al máximo esta experiencia educativa y que les ayude a abrir nuevas puertas en su camino hacia el éxito. <br> <br>
+              
+              ¡Estamos emocionados de embarcarnos en este viaje de aprendizaje juntos! Comencemos a explorar el mundo de Excel 2019 y descubrir las infinitas posibilidades que esta herramienta ofrece. ¡Vamos a empezar a aprender y superarnos juntos!</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="course">
+        <h2>Tema 1: Introducción a Excel 2019</h2>
+        <button onclick="toggleTopics(2)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+        <div class="topic-toggle" id="topics2">
+          <div class="topic">
+            <h3>Tema 1 en Formato de PDF</h3>
+            <button id="pdf-toggle1" onclick="togglePDF1()" style="margin-bottom: 10px;">Mostrar PDF</button>
+            <iframe id="pdf-frame1" src="classes/Clase1.pdf" width="700" height="600"></iframe>
+          </div>
+          <div class="topic">
+            <h3>Tema 1 en Formato de Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WsEtgDSB5Q0?si=SQ1IzCV5RPcxDtAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="topic">
+            <h3>Práctica 1</h3>
+            <button id="pdf-toggle2" onclick="togglePDF2()" style="margin-bottom: 10px;">Mostrar PDF</button>
+            <iframe id="pdf-frame2" src="practice/Clase1P.pdf" width="700" height="600"></iframe>
+          </div>
+          <div class="topic">
+            <h3>Examen 1</h3>
+            <a href="https://forms.gle/75Gvpd8M3CKTHVMN9" target="_blank">Abrir examen 1</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="course">
+        <h2>Tema 2: </h2>
+        <button onclick="toggleTopics(3)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
+        <div class="topic-toggle" id="topics3">
+          <div class="topic">
+            <h3>Topic 1 - HTML</h3>
+            <ul>
+              <li><a href="topic1-content.pdf">Content PDF</a></li>
+              <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video</a></li>
+              <li><a href="topic1-practice.html">Practice</a></li>
+              <li><a href="topic1-test.html">Test</a></li>
+            </ul>
+          </div>
+          <div class="topic">
+            <h3>Topic 2 - CSS</h3>
+            <ul>
+              <li><a href="topic2-content.pdf">Content PDF</a></li>
+              <li><a href="https://www.youtube.com/watch?v>dQw4w9WgXcQ">Video</a></li>
+              <li><a href="topic2-practice.html">Practice</a></li>
+              <li><a href="topic2-test.html">Test</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      function toggleTopics(courseNumber) {
+        var topics = document.getElementById("topics" + courseNumber);
+        topics.classList.toggle("active");
+      }
+  
+      function togglePDF1() {
+        const pdfFrame = document.getElementById('pdf-frame1');
+        const toggleBtn = document.getElementById('pdf-toggle1');
+        
+        if (pdfFrame.classList.contains('active1')) {
+          pdfFrame.classList.remove('active1');
+          toggleBtn.textContent = 'Mostrar PDF';
+        } else {
+          pdfFrame.classList.add('active1');
+          toggleBtn.textContent = 'Ocultar PDF';
+        }
+      }
+  
+      function togglePDF2() {
+        const pdfFrame = document.getElementById('pdf-frame2');
+        const toggleBtn = document.getElementById('pdf-toggle2');
+        
+        if (pdfFrame.classList.contains('active2')) {
+          pdfFrame.classList.remove('active2');
+          toggleBtn.textContent = 'Mostrar PDF';
+        } else {
+          pdfFrame.classList.add('active2');
+          toggleBtn.textContent = 'Ocultar PDF';
+        }
+      }
+    </script>
 
 
-    /* PDF 3 */
-    #pdf-frame3 {
-      max-height: 0;
-      opacity: 0;
-      display: block;
-      overflow: hidden;
-      transition: max-height 0.9s ease, opacity 0.9s ease;
-    }
-    #pdf-frame3.active3 {
-      max-height: 900px; /* adjust as needed */
-      opacity: 1;
-    }
 
-     /* PDF 4 */
-     #pdf-frame4 {
-      max-height: 0;
-      opacity: 0;
-      display: block;
-      overflow: hidden;
-      transition: max-height 0.9s ease, opacity 0.9s ease;
-    }
-    #pdf-frame4.active4 {
-      max-height: 900px; /* adjust as needed */
-      opacity: 1;
-    }
-  </style>
-</head>
-<body>
-  <img class="centered-image" src="media/banner.png" alt="">
+        <!-- contacto -->
+    <center><h2 class="mb-4" style="margin-top: 800px;">Contáctanos</h2></center>
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+        
+              <h2 class="mb-4">¿Opiniones? ¿Comentarios? ¿Dudas?<br> Puedes enviarnos un mensaje por WhatsApp</h2>
+              <a href="https://wa.me/+50370641371" target="_blank">
+                <button class="whatsapp-button">
+                  <i class="fa fa-whatsapp"></i> Contáctanos por WhatsApp
+                </button> 
+              </a>
 
-  <div id="content">
-    <div class="course">
-      <h2>Introducción</h2>
-      <button onclick="toggleTopics(1)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
-      <div class="topic-toggle" id="topics1">
-        <div class="topic">
-          <h3>¡Con Gráficos es Mejor!</h3>
-          <p>¡Bienvenidos al Curso de Excel 2019 Básico ¡Con Gráficos es Mejor!, una emocionante iniciativa de aprendizaje gratuito ofrecida por el proyecto comunitario Acceso a Oportunidades para Superarse (AOS). En AOS, estamos comprometidos con el empoderamiento de las comunidades a través de la adquisición de habilidades valiosas, y Excel es una herramienta esencial en el mundo laboral y académico. Este curso ha sido diseñado especialmente para aquellos que desean adentrarse en el mundo de las hojas de cálculo y descubrir cómo Excel puede facilitar la gestión de datos y la toma de decisiones.   <br><br>
-
-            A lo largo de este curso, exploraremos los conceptos básicos de Excel 2019, desde la creación de hojas de cálculo hasta la realización de cálculos simples, la organización de datos y la creación de gráficos informativos. Nuestro objetivo es brindarles las habilidades esenciales necesarias para utilizar Excel de manera efectiva en la vida cotidiana y en sus futuras carreras. <br> <br>
             
-            En AOS, creemos en la importancia de compartir conocimientos y oportunidades, y este curso es una manifestación de ese compromiso. Esperamos que aprovechen al máximo esta experiencia educativa y que les ayude a abrir nuevas puertas en su camino hacia el éxito. <br> <br>
-            
-            ¡Estamos emocionados de embarcarnos en este viaje de aprendizaje juntos! Comencemos a explorar el mundo de Excel 2019 y descubrir las infinitas posibilidades que esta herramienta ofrece. ¡Vamos a empezar a aprender y superarnos juntos!</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="course">
-      <h2>Tema 1: Introducción a Excel 2019</h2>
-      <button onclick="toggleTopics(2)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
-      <div class="topic-toggle" id="topics2">
-        <div class="topic">
-          <h3>Tema 1 en Formato de PDF</h3>
-          <button id="pdf-toggle1" onclick="togglePDF1()">Mostrar PDF</button>
-          <iframe id="pdf-frame1" src="classes/Clase1.pdf" width="700" height="600"></iframe>
-        </div>
-        <div class="topic">
-          <h3>Tema 1 en Formato de Video</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WsEtgDSB5Q0?si=_eCsH8IA4o019OgH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="topic">
-          <h3>Práctica 1</h3>
-          <button id="pdf-toggle2" onclick="togglePDF2()">Mostrar PDF</button>
-          <iframe id="pdf-frame2" src="practice/Clase1P.pdf" width="700" height="600"></iframe>
-        </div>
-        <div class="topic">
-          <h3>Examen 1</h3>
-          <a href="https://forms.gle/75Gvpd8M3CKTHVMN9" target="_blank">Abrir examen 1</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="course">
-      <h2>Tema 2: Funciones de Excel</h2>
-      <button onclick="toggleTopics(3)" class="btn custom-btn custom-btn-bg custom-btn-link">Mostrar Contenido</button>
-      <div class="topic-toggle" id="topics3">
-        <div class="topic">
-          <h3>Tema 2 en Formato de PDF</h3>
-          <button id="pdf-toggle3" onclick="togglePDF3()">Mostrar PDF</button>
-          <iframe id="pdf-frame3" src="classes/Clase1.pdf" width="700" height="600"></iframe>
-        </div>
-        <div class="topic">
-          <h3>Tema 2 en Formato de Video</h3>
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IDMJtIVTTxU?si=b4kU7g6KYaSOiFUJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="topic">
-          <h3>Práctica 2</h3>
-          <button id="pdf-toggle4" onclick="togglePDF4()">Mostrar PDF</button>
-          <iframe id="pdf-frame4" src="practice/Clase1P.pdf" width="700" height="600"></iframe>
-        </div>
-        <div class="topic">
-          <h3>Examen 1</h3>
-          <a href="https://forms.gle/75Gvpd8M3CKTHVMN9" target="_blank">Abrir examen 1</a>
-        </div>
-      </div>
-    </div>
+    <!-- Footer -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
 
-  <script>
-    function toggleTopics(courseNumber) {
-      var topics = document.getElementById("topics" + courseNumber);
-      topics.classList.toggle("active");
-    }
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2022 AOS . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by AOS Team</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
 
-    function togglePDF1() {
-      const pdfFrame = document.getElementById('pdf-frame1');
-      const toggleBtn = document.getElementById('pdf-toggle1');
-      
-      if (pdfFrame.classList.contains('active1')) {
-        pdfFrame.classList.remove('active1');
-        toggleBtn.textContent = 'Mostrar PDF';
-      } else {
-        pdfFrame.classList.add('active1');
-        toggleBtn.textContent = 'Ocultar PDF';
-      }
-    }
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
-    function togglePDF2() {
-      const pdfFrame = document.getElementById('pdf-frame2');
-      const toggleBtn = document.getElementById('pdf-toggle2');
-      
-      if (pdfFrame.classList.contains('active2')) {
-        pdfFrame.classList.remove('active2');
-        toggleBtn.textContent = 'Mostrar PDF';
-      } else {
-        pdfFrame.classList.add('active2');
-        toggleBtn.textContent = 'Ocultar PDF';
-      }
-    }
-
-    function togglePDF3() {
-      const pdfFrame = document.getElementById('pdf-frame3');
-      const toggleBtn = document.getElementById('pdf-toggle3');
-      
-      if (pdfFrame.classList.contains('active3')) {
-        pdfFrame.classList.remove('active3');
-        toggleBtn.textContent = 'Mostrar PDF';
-      } else {
-        pdfFrame.classList.add('active3');
-        toggleBtn.textContent = 'Ocultar PDF';
-      }
-    }
-
-    function togglePDF4() {
-      const pdfFrame = document.getElementById('pdf-frame4');
-      const toggleBtn = document.getElementById('pdf-toggle4');
-      
-      if (pdfFrame.classList.contains('active4')) {
-        pdfFrame.classList.remove('active4');
-        toggleBtn.textContent = 'Mostrar PDF';
-      } else {
-        pdfFrame.classList.add('active4');
-        toggleBtn.textContent = 'Ocultar PDF';
-      }
-    }
-  </script>
-</body>
+  </body>
 </html>
