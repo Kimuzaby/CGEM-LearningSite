@@ -990,7 +990,7 @@ button{
   margin-right: 10px; 
 }
 
-
+ /* Tema 1 Topics */
     /* PDF 1 */
     #pdf-frame1 {
       max-height: 0;
@@ -1014,6 +1014,211 @@ button{
       transition: max-height 0.9s ease, opacity 0.9s ease;
     }
     #pdf-frame2.active2 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+
+  /* Tema 2 Topics */
+     /* PDF 3 */
+     #pdf-frame3 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame3.active3 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 4 */
+    #pdf-frame4 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame4.active4 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 3 Topics */
+     /* PDF 5 */
+     #pdf-frame5 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame5.active5 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 6 */
+    #pdf-frame6 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame6.active6 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+     /* Tema 4 Topics */
+     /* PDF 7 */
+     #pdf-frame7 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame7.active7 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 5 Topics */
+     /* PDF 8 */
+     #pdf-frame8 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame8.active8 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 9*/
+    #pdf-frame9 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame9.active9 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 6 Topics */
+     /* PDF 10 */
+     #pdf-frame10 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame10.active10 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 11*/
+    #pdf-frame11 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame11.active11 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 7 Topics */
+     /* PDF 12 */
+     #pdf-frame12 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame12.active12 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 13*/
+    #pdf-frame13 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame13.active13 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 8 Topics */
+     /* PDF 14 */
+     #pdf-frame14 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame14.active14 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 9 Topics */
+     /* PDF 15 */
+     #pdf-frame15 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame15.active15 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* Tema 10 Topics */
+     /* PDF 16 */
+     #pdf-frame16 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame16.active16 {
+      max-height: 900px; /* adjust as needed */
+      opacity: 1;
+    }
+
+    /* PDF 17*/
+    #pdf-frame17 {
+      max-height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+      transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+    #pdf-frame17.active17 {
       max-height: 900px; /* adjust as needed */
       opacity: 1;
     }
